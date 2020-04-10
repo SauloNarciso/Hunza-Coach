@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hunza Coach</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Saulo\Desktop\Hunza\_css\contato.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Hunza Coach</h1>
+                <h2>Emagrecimento, Saúde e Vida
+                    <w><a href="https://www.hotmart.com/product/hunza-coach/" target="_blank"> Adquira Agora!</a></w>
+                </h2>
+
+            </hgroup>
+
+            <img id="icone" src="C:\Users\Saulo\Desktop\Hunza\_imagens\logotrans.png" />
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li><a href="C:\Users\Saulo\Desktop\Hunza\index.html">Apresentação</a></li>
+                    <li><a href="C:\Users\Saulo\Desktop\Hunza\sobre.html">Sobre</a></li>
+                    <li><a href="C:\Users\Saulo\Desktop\Hunza\fotos.html">Antes e depois</a></li>
+                    <li><a href="C:\Users\Saulo\Desktop\Hunza\contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Fale conosco > Contato</h3>
+                    </hgroup>
+                </header>
+
+                <form method="post" id="fContato" action="mailto:amaralidiomas@gmail.com" oninput="calc_total();">
+                    <fieldset id="usuarios">
+                        <legend>Identificação</legend>
+                        <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo" /></p>
+                        <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail" /></p>
+                        <fieldset id="sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label><br/>
+                            <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label><br/>
+                            <input type="radio" name="tSexo" id="cInd"> <label for="cInd">Não declarar</label>
+                        </fieldset>
+                        <p>Data de Nascimento: <input type="date" name="tData" /></p>
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend>Mensagem</legend>
+                        <p><label for="cMsg">Mensagem: </label>
+                            <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe sua mensagem."></textarea></p>
+                    </fieldset>
+
+                    <input type="image" name="tEnviar" id="cEnviar" src="C:\Users\Saulo\Desktop\HTML\projeto-glass-html5\_imagens\botao-enviar.png" onclick="verificar()" />
+                    <script src="scripthunza.js"></script>
+
+                </form>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2020 - by Hunza Coach</br>
+                <a href="https://www.facebook.com/coquitahunza/" target="_blank"> Facebook </a> |
+                <a href=" http://www.instagram.com/coquita.coqui/" target="_blank"> Instagram </a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
