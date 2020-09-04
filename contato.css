@@ -20,7 +20,7 @@ header#cabecalho img#icone {
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 70px;
-    background: url("_imagens/logotrans.png") no-repeat;
+    background: url("logotrans.png") no-repeat;
     background-position: 0px 50px;
 }
 
